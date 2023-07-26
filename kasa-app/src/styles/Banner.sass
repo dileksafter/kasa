@@ -1,0 +1,38 @@
+.banner
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  position: relative
+  margin: 0px 100px 0px 100px
+  width: 1240px
+  height: 223px
+
+  img
+    display: flex
+    justify-content: center
+    object-fit: cover
+    height: 100%
+    width: 100%
+    border-radius: 25px
+    filter: brightness(0.75)
+
+  h1
+    display: flex
+    flex-wrap: wrap
+    position: absolute
+    font-weight: 500
+    font-size: 48px
+    color: white
+
+@media (max-width: 375px)
+  .banner
+    width: 335px
+    height: 111px
+    margin: 0px 20px 0px 20px
+    border-radius: 10px
+
+    h1
+      font-size: 24px
+      margin-left: 16px
+      margin-right: 120px 
