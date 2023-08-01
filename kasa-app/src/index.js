@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
-// import About from './routes/About';
-// import Catalogue from './routes/Carrousel';
+import About from './routes/About';
+import Logement from './routes/Logement';
 import Error from './routes/Error404';
 
 import React from 'react';
@@ -13,19 +13,20 @@ import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
+  <div className='pagecontent'>
 
     <BrowserRouter>
       <Header />
       <Routes >
         <Route path='/' element={<Home />} />
-        {/* <Route path='/about' element={<About />} />
-        <Route path='/Catalogue' element={<Carrousel />} /> */}
+        <Route path='/about' element={<About />} />
+        <Route path="/logement/:id" element={<Logement />} />
         <Route path='/*' element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
-    
+
+
 
   </div>
 

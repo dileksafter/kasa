@@ -1,1 +1,0 @@
-// import {gallery} from "../assets/gallery"
