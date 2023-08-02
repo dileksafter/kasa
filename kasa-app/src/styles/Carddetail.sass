@@ -5,26 +5,36 @@
         display: flex
         justify-content: space-between
 
-    .collapse-title
-        width: 582px
-        height: 52px
-        background-color: #FF6060
-        color: #FFFFFF
-        border-radius: 10px
-        border: none
-        display: flex
-        justify-content: space-between
-        align-items: center
-        padding: 10px 20px 10px 10px
+    // .collapse-title
+    //     width: 582px
+    //     height: 52px
+    //     background-color: #FF6060
+    //     color: #FFFFFF
+    //     border-radius: 10px
+    //     border: none
+    //     display: flex
+    //     justify-content: space-between
+    //     align-items: center
+    //     padding: 10px 20px 10px 10px
 
-    .collapse-content
-        width: 582px
-        background-color: #F6F6F6
-        font-size: 18px
-        color: #FF6060
+    // .collapse-content
+    //     width: 582px
+    //     background-color: #F6F6F6
+    //     font-size: 18px
+        // color: #FF6060
 
 .details
     display: flex
     justify-content: space-between
 
-    
+@media all and (max-width: 375px)
+    .carddetails, .collapses, .details
+        display: flex
+        flex-direction: column
+        margin: 20px 20px 27px 20px
+
+        .collapses, .details
+            margin: 0
+
+       
+       
