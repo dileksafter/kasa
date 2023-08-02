@@ -5,27 +5,26 @@
         display: flex
         justify-content: space-between
 
-    // .collapse-title
-    //     width: 582px
-    //     height: 52px
-    //     background-color: #FF6060
-    //     color: #FFFFFF
-    //     border-radius: 10px
-    //     border: none
-    //     display: flex
-    //     justify-content: space-between
-    //     align-items: center
-    //     padding: 10px 20px 10px 10px
+        .collapse-container
+            width: 582px
+            height: 52px
 
-    // .collapse-content
-    //     width: 582px
-    //     background-color: #F6F6F6
-    //     font-size: 18px
-        // color: #FF6060
+            .collapse-title
+                border-radius: 10px
 
-.details
-    display: flex
-    justify-content: space-between
+            .collapse-content
+                width: 582px
+                background-color: #F6F6F6
+                font-size: 18px
+                color: #FF6060
+
+    .details
+        display: flex
+        justify-content: space-between
+
+    .rating
+        display: flex
+        justify-content: flex-end
 
 @media all and (max-width: 375px)
     .carddetails, .collapses, .details
@@ -36,5 +35,17 @@
         .collapses, .details
             margin: 0
 
-       
-       
+            .collapse-container
+                width: 335px
+                height: 30px
+
+                .collapse-title
+                    font-size: 13px
+                    font-weight: 500
+
+        .tag
+            width: 84px
+            height: 18px
+            font-size: 10px
+            font-weight: 500
+            margin-right: 10px
