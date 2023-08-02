@@ -11,9 +11,13 @@ const Collapse = ({ title, content }) => {
         <div className="collapse-container">
             <button onClick={() => setOpen(!open)} className="collapse-title">
                 {title}
-                <FontAwesomeIcon icon ={iconToShow}/>
+                <FontAwesomeIcon icon={iconToShow} />
             </button>
-            {open && <div className="collapse-content">{content}</div>}
+            {open && <div className='collapse-content'>
+                {content.split("\n").map((line, index) => (
+                    <p key={index}>{line}</p>
+                ))}
+            </div>}
         </div>
     );
 };

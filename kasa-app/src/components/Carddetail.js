@@ -1,12 +1,13 @@
 import galleryItems from "../assets/gallery"
 // import Carrousel from "./Carrousel";
-// import Title from "./Title";
-// import Location from "./Location";
-// import Tags from "./Tags";
-// import Host from "./Host";
+import Title from "./Title";
+import Location from "./Location";
+import Tags from "./Tags";
+import Host from "./Host";
 import Rate from "./Rate";
 import Collapse from "./Collapse";
 import { useParams } from "react-router-dom"
+import '../styles/Carddetail.sass'
 
 const Carddetail = () => {
 
@@ -22,19 +23,19 @@ const Carddetail = () => {
       <div className="details">
 
         <div className="metadata">
-          {/* <Title title={targetLogement.title} />
+          <Title title={targetLogement.title} />
           <Location location={targetLogement.location} />
-          <Tags tags={targetLogement.tags} /> */}
+          <Tags tags={targetLogement.tags} />
 
         </div>
         <div className="hostdata">
-          {/* <Host host={targetLogement.host} /> */}
+          <Host host={targetLogement.host} />
           <Rate rating={targetLogement.rating} />
         </div>
       </div>
       <div className="collapses">
-      <Collapse title="Description" content={targetLogement.description} />
-      <Collapse title="Équipements" content={JSON.stringify( targetLogement.equipments)} />
+        <Collapse title="Description" content={targetLogement.description} />
+        <Collapse title="Équipements" content={targetLogement.equipments.join("\n")} />
       </div>
     </div>
   );
