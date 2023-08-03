@@ -1,6 +1,7 @@
 .tags
     display: flex
     justify-content: flex-start
+    margin-bottom: 15px
 
     .tag
         padding: 0px 10px 0px 10px
@@ -17,9 +18,12 @@
         justify-content: center
 
 @media all and (max-width: 375px)
-     .tag
+    .tags
+        margin-bottom: 15px
+
+        .tag
             width: auto
             height: 18px
             font-size: 10px
             font-weight: 500
-            padding: 2px 5px 2px 5px
+            margin-right: 10px

@@ -6,13 +6,16 @@ import Tags from "./Tags";
 import Host from "./Host";
 import Rate from "./Rate";
 import Collapse from "./Collapse";
-import { useParams } from "react-router-dom"
+import { useParams, Navigate} from "react-router-dom"
 import '../styles/Carddetail.sass'
 
 const Carddetail = () => {
 
   const { id } = useParams()
   const targetLogement = galleryItems.find((item) => item.id === id)
+  if (!targetLogement){
+    return(<Navigate to='/error' />)
+  }
 
   return (
     <div className="carddetails">

@@ -1,12 +1,17 @@
+.carrousel
+    width: 100%
+    margin-bottom: 10px
+
 .displayed-picture
     position: relative
 
 .picture
     width: 100%
-    height: auto
+    height: 450px
     transition: opacity 0.3s ease
     top: 0
     left: 0
+    object-fit: none
 
 .leftarrow,
 .rightarrow
@@ -46,11 +51,18 @@
         color: #ff0000
 
 @media all and (max-width: 375px)
-    .pagination
-        display: none
+    .carrousel
+        margin-bottom: 15px
+        
+        .picture
+            height: 255px
+            object-fit: contain
 
-    .leftarrow, .rightarrow
-        width: 24px
-        height: 24px
-        margin: 0px 5px 0px 5px
+        .pagination
+            display: none
+
+        .leftarrow, .rightarrow
+            width: 24px
+            height: 24px
+            margin: 0px 5px 0px 5px
 
