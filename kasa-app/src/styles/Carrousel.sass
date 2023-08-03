@@ -1,0 +1,56 @@
+.displayed-picture
+    position: relative
+
+.picture
+    width: 100%
+    height: auto
+    transition: opacity 0.3s ease
+    top: 0
+    left: 0
+
+.leftarrow,
+.rightarrow
+    width: 46.68px
+    height: 79.2px
+    cursor: pointer
+    color: #FFFF
+    transform: translateY(-50%)
+    position: absolute
+    top: 50%
+
+.leftarrow
+    left: 0
+    margin-left: 24px
+
+.rightarrow
+    right: 0
+    margin-right: 24px
+
+.pagination
+    position: absolute
+    bottom: 20px
+    left: 50%
+    transform: translateX(-50%)
+    color: #FFFF
+    font-size: 18px
+    font-weight: 500
+
+    & span
+        display: inline-block
+        margin: 0 5px
+        cursor: pointer
+        color: #000
+
+    & span.active
+        font-weight: bold
+        color: #ff0000
+
+@media all and (max-width: 375px)
+    .pagination
+        display: none
+
+    .leftarrow, .rightarrow
+        width: 24px
+        height: 24px
+        margin: 0px 5px 0px 5px
+

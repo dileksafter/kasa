@@ -1,5 +1,5 @@
 import galleryItems from "../assets/gallery"
-// import Carrousel from "./Carrousel";
+import Carrousel from "./Carrousel";
 import Title from "./Title";
 import Location from "./Location";
 import Tags from "./Tags";
@@ -17,7 +17,7 @@ const Carddetail = () => {
   return (
     <div className="carddetails">
       <div className="carrousel">
-        {/* <Carrousel carrousel={targetLogement.carrousel} /> */}
+        <Carrousel pictures={targetLogement.pictures} />
       </div>
 
       <div className="details">
