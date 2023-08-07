@@ -13,6 +13,16 @@
     left: 0
     object-fit: none
 
+.animate-picture
+    animation: fadeInOut 0.5s ease
+
+@keyframes fadeInOut
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1
+
 .leftarrow,
 .rightarrow
     width: 46.68px
@@ -40,20 +50,10 @@
     font-size: 18px
     font-weight: 500
 
-    & span
-        display: inline-block
-        margin: 0 5px
-        cursor: pointer
-        color: #000
-
-    & span.active
-        font-weight: bold
-        color: #ff0000
-
 @media all and (max-width: 375px)
     .carrousel
         margin-bottom: 15px
-        
+
         .picture
             height: 255px
             object-fit: contain
@@ -65,4 +65,3 @@
             width: 24px
             height: 24px
             margin: 0px 5px 0px 5px
-

@@ -18,7 +18,12 @@ const Carrousel = ({ pictures }) => {
         <div className="displayed-picture">
             {pictures.map((picture, index) => (
 
-                <img className="picture" key={index} src={picture} alt="" style={{ display: index === displayed ? 'block' : 'none' }} />
+                <img 
+                className={`picture ${index === displayed ? 'animate-picture' : ''}`}
+                key={index} 
+                src={picture} 
+                alt="" 
+                style={{ display: index === displayed ? 'block' : 'none' }} />
             ))}
 
             {
