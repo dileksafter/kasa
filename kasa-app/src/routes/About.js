@@ -2,7 +2,7 @@ import "../styles/About.sass"
 import AboutBanner from '../components/AboutBanner';
 import Collapse from '../components/Collapse';
 
-const App = () => {
+const About = () => {
   return (
     <>
       <AboutBanner />  
@@ -28,4 +28,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default About;

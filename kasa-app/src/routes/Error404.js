@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import "../styles/Error404.sass"
 
-const App = () => {
+const Error = () => {
     return (
         <div className='errorPage'>
             <h1 className="error404">404</h1>
@@ -11,4 +11,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Error;
