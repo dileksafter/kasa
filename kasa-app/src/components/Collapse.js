@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Collapse = ({ title, content }) => {
-    const [open, setOpen] = useState(false);
-    const iconToShow = open ? faAngleDown : faAngleUp;
+    const [open, setOpen] = useState(false)
+    const iconToShow = open ? faAngleDown : faAngleUp
+ 
+
+    
 
     return (
         <div className="collapse-container">
@@ -13,11 +16,11 @@ const Collapse = ({ title, content }) => {
                 {title}
                 <FontAwesomeIcon icon={iconToShow} />
             </button>
-            {open && <div className='collapse-content'>
+            <div className={`collapse-content ${!open ? "hide" : "show"}`}>
                 {content.split("\n").map((line, index) => (
                     <p key={index}>{line}</p>
                 ))}
-            </div>}
+            </div>
         </div>
     );
 };
