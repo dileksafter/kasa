@@ -6,6 +6,7 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 const Carrousel = ({ pictures }) => {
 
     const [displayed, definePicture] = useState(0);
+    
     const prevPicture = () => {
         definePicture(displayed === 0 ? pictures.length - 1 : displayed - 1);
     };

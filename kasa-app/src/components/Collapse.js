@@ -7,9 +7,6 @@ const Collapse = ({ title, content }) => {
     const [open, setOpen] = useState(false)
     const iconToShow = open ? faAngleDown : faAngleUp
  
-
-    
-
     return (
         <div className="collapse-container">
             <button onClick={() => setOpen(!open)} className="collapse-title">

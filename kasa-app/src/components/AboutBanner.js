@@ -3,7 +3,7 @@ import imgBanner from "../assets/aboutimagebanner.png"
 
 const AboutBanner = () => {
     return (
-        <div className="banner">
+        <div className="about-banner">
             <img src={imgBanner} alt="Banniere Kasa About" />
         </div>
     );

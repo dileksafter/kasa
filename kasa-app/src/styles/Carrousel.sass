@@ -15,6 +15,7 @@
 
 .animate-picture
     animation: fadeInOut 0.5s ease
+    border-radius: 25px
 
 @keyframes fadeInOut
     0%
@@ -22,6 +23,8 @@
 
     100%
         opacity: 1
+
+
 
 .leftarrow,
 .rightarrow
@@ -53,10 +56,15 @@
 @media all and (max-width: 375px)
     .carrousel
         margin-bottom: 15px
+        border-radius: 10px
 
-        .picture
-            height: 255px
-            object-fit: contain
+        .displayed-picture
+            position: relative
+
+            .picture
+                width: 335px
+                height: 255px
+                object-fit: fill
 
         .pagination
             display: none

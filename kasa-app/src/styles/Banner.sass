@@ -1,4 +1,4 @@
-.banner
+.banner, .about-banner
   display: flex
   flex-wrap: wrap
   justify-content: center
@@ -26,13 +26,18 @@
     color: white
 
 @media (max-width: 375px)
-  .banner
-    width: 335px
-    height: 111px
+  .about-banner, .banner
+    width: 336px
     margin: 0px 20px 0px 20px
     border-radius: 10px
+    
+  .about-banner
+    height: 223px 
+
+  .banner
+    height: 111px
 
     h1
       font-size: 24px
       margin-left: 16px
-      margin-right: 120px 
+      margin-right: 120px

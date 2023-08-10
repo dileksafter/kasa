@@ -10,7 +10,6 @@
 
 .collapse-content
     background-color: #F6F6F6
-    padding: 12px
     width: auto
     font-size: 18px
     color: #FF6060
@@ -24,7 +23,6 @@
 
 .collapse-content.show
     animation: unroll 0.8s ease forwards
-    // max-height: 1000px
     opacity: 1
 
     p
@@ -48,3 +46,8 @@
     to
         opacity: 0
         max-height: 0
+
+@media all and (max-width: 375px)
+    .collapse-content.show p, .collapse-content.hide p
+        font-size: 12px
+        color: #FF6060
